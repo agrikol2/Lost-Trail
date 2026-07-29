@@ -1,4 +1,4 @@
-from config import *
+from tkinter import *
 
 
 def buttons(root):
