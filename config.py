@@ -2,7 +2,7 @@
 # pylint: disable=missing-function-docstring
 
 
-from tkinter import Tk,PhotoImage
+from tkinter import Tk, PhotoImage
 
 
 def setup_window():

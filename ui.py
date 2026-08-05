@@ -9,8 +9,11 @@ def create_menu(root):
     menu_frame = Frame(root, bg="Black")
     menu_frame.pack(padx=200, pady=150)
 
-    def hide():
+    def start_new_game():
+
         menu_frame.pack_forget()
+        new_game_frame = Frame(root, bg="Black")
+        new_game_frame.pack(padx=200, pady=150)
 
     button_ng = Button(
         menu_frame,
@@ -19,9 +22,15 @@ def create_menu(root):
         bg="black",
         fg="white",
         relief="flat",
-        command=hide,
+        command=start_new_game,
     )
     button_ng.pack(pady=10, ipadx=100, ipady=10)
+
+    def open_settings():
+
+        menu_frame.pack_forget()
+        settings_frame = Frame(root, bg="Black")
+        settings_frame.pack(padx=200, pady=150)
 
     button_settings = Button(
         menu_frame,
@@ -30,9 +39,15 @@ def create_menu(root):
         bg="black",
         fg="white",
         relief="flat",
-        command=hide,
+        command=open_settings,
     )
     button_settings.pack(pady=10, ipadx=100, ipady=10)
+
+    def open_credits():
+
+        menu_frame.pack_forget()
+        credits_frame = Frame(root, bg="Black")
+        credits_frame.pack(padx=200, pady=150)
 
     button_credits = Button(
         menu_frame,
@@ -41,7 +56,7 @@ def create_menu(root):
         bg="black",
         fg="white",
         relief="flat",
-        command=hide,
+        command=open_credits,
     )
     button_credits.pack(pady=10, ipadx=100, ipady=10)
 
@@ -60,7 +75,7 @@ def create_menu(root):
 def label(root):
     version_label = Label(
         root,
-        text="Version: 0.0.2",
+        text="Version: 0.0.3",
         font=("Times New Roman", 15),
         bg="black",
         fg="white",
