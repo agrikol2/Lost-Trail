@@ -32,7 +32,7 @@ Language: Python
 
 
 ---
-# Installation (In development)
+# Installation and running (In development)
 
 1. Run the following command in the terminal:
    git clone https://github.com/agrikol2/Lost-Trail.git
@@ -49,5 +49,3 @@ Language: Python
 	
 	2 - The "Credits," "Settings," and "New Game" buttons open a new frame while hiding the old one (work in progress)
 
----
-# Running (In development)
