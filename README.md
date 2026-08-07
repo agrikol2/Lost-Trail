@@ -46,6 +46,7 @@ Language: Python
 	**Project Functionality (In development)**
 
 	1 - The "Quit" button closes the application
+	
 	2 - The "Credits," "Settings," and "New Game" buttons open a new frame while hiding the old one (work in progress)
 
 ---
