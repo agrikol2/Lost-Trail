@@ -34,7 +34,19 @@ Language: Python
 ---
 # Installation (In development)
 
+1. Run the following command in the terminal:
+   git clone https://github.com/agrikol2/Lost-Trail.git
 
+2. Navigate to the project folder: `cd Lost_Trail`
+
+3. Manually open the folder in VS Code: File -> Open Folder -> Lost-Trail
+
+4. Open the `main.py` file and run it by pressing F5
+
+	**Project Functionality (In development)**
+
+	1 - The "Quit" button closes the application
+	2 - The "Credits," "Settings," and "New Game" buttons open a new frame while hiding the old one (work in progress)
 
 ---
 # Running (In development)
