@@ -37,7 +37,7 @@ Language: Python
 1. Run the following command in the terminal:
    git clone https://github.com/agrikol2/Lost-Trail.git
 
-2. Navigate to the project folder: `cd Lost_Trail`
+2. Navigate to the project folder: `cd Lost-Trail`
 
 3. Manually open the folder in VS Code: File -> Open Folder -> Lost-Trail
 
