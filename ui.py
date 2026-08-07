@@ -51,7 +51,7 @@ def create_menu(root):
 
     button_credits = Button(
         menu_frame,
-        text="credits",
+        text="Credits",
         width=5,
         bg="black",
         fg="white",
@@ -62,7 +62,7 @@ def create_menu(root):
 
     button_quit = Button(
         menu_frame,
-        text="quit",
+        text="Quit",
         width=5,
         bg="black",
         fg="white",
@@ -80,4 +80,4 @@ def label(root):
         bg="black",
         fg="white",
     )
-    version_label.pack(expand=True, anchor="sw", padx=10, pady=10)
+    version_label.pack(side="bottom", anchor="sw", padx=10, pady=10)
