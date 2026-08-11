@@ -1,7 +1,7 @@
 # pylint: disable=missing-module-docstring
 # pylint: disable=missing-function-docstring
 
-
+from pathlib import Path
 from tkinter import Tk, PhotoImage
 
 
@@ -9,14 +9,18 @@ def setup_window():
     root = Tk()
     root.title("Lost Trail")
 
-    root.geometry("900x650")
+    root.geometry("800x600")
 
-    root.minsize(400, 250)
+    root.minsize(800, 600)
 
-    icon = PhotoImage(
-        file="/home/tima/Рабочий стол/Программирование/Python/My game/pictures/@.png"
-    )
+
+
+    project_path = Path(__file__).resolve().parent
+    icon_path = project_path / "pictures" / "@.png"
+
+    icon = PhotoImage(file=icon_path)
     root.iconphoto(True, icon)
+
 
     root["bg"] = "black"
 
