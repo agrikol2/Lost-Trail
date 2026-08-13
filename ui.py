@@ -51,7 +51,6 @@ def create_menu(root):
             root.geometry(resolutions)
 
         resolutions_box.bind("<<ComboboxSelected>>", change_resolution)
-            
 
         button_back = Button(
             settings_frame,

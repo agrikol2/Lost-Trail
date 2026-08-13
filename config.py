@@ -17,7 +17,6 @@ def setup_window():
 
     project_path = Path(__file__).resolve().parent
     icon_path = project_path / "pictures" / "@.png"
-
     icon = PhotoImage(file=icon_path)
     root.iconphoto(True, icon)
 
