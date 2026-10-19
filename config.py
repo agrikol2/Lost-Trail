@@ -9,7 +9,7 @@ def setup_window():
     root = Tk()
     root.title("Lost Trail")
 
-    root.geometry("800x600")
+    root.geometry("1920x1080")
 
     root.minsize(800, 600)
 

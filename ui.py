@@ -3,17 +3,17 @@
 
 from tkinter import Frame, Button, Label
 from tkinter.ttk import Combobox
+from game import start_game
 
 def create_menu(root):
 
-    menu_frame = Frame(root, bg="white")
+    menu_frame = Frame(root, bg="black")
     menu_frame.pack(expand=True)
 
     def start_new_game():
 
         menu_frame.pack_forget()
-        new_game_frame = Frame(root, bg="White")
-        new_game_frame.pack(padx=200, pady=150)
+        start_game(root)
 
     button_ng = Button(
         menu_frame,
@@ -29,7 +29,7 @@ def create_menu(root):
     def open_settings():
 
         menu_frame.pack_forget()
-        settings_frame = Frame(root, bg="White")
+        settings_frame = Frame(root, bg="Black")
         settings_frame.pack(padx=200, pady=150)
 
 
@@ -85,7 +85,7 @@ def create_menu(root):
         label_credits.pack(side="top", anchor="n", padx=10, pady=100)
 
         menu_frame.pack_forget()
-        credits_frame = Frame(root, bg="White")
+        credits_frame = Frame(root, bg="Black")
         credits_frame.pack(expand=True)
 
         def back():
