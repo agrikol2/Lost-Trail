@@ -130,7 +130,7 @@ def create_menu(root):
 def label(root):
     version_label = Label(
         root,
-        text="Version: 0.0.4",
+        text="Version: 0.0.5",
         font=("Times New Roman", 15),
         bg="black",
         fg="white",

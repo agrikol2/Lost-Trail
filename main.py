@@ -2,13 +2,13 @@
 # pylint: disable=missing-function-docstring
 
 from config import setup_window
-from ui import label, create_menu
+from ui import create_menu
 
 
 def main():
     window = setup_window()
     create_menu(window)
-    label(window)
+    # label(window)
     window.mainloop()
 
 
