@@ -9,6 +9,7 @@ def create_menu(root):
 
     menu_frame = Frame(root, bg="black")
     menu_frame.pack(expand=True)
+    
 
     def start_new_game():
 
@@ -130,9 +131,9 @@ def create_menu(root):
 def label(root):
     version_label = Label(
         root,
-        text="Version: 0.0.5",
+        text="Version: 0.0.6",
         font=("Times New Roman", 15),
         bg="black",
         fg="white",
     )
-    version_label.pack(side="bottom", anchor="sw", padx=10, pady=10)
+    version_label.place(relx=0.01, rely=0.98, anchor="sw")

@@ -1,5 +1,5 @@
-# # pylint: disable=missing-module-docstring
-# # pylint: disable=missing-function-docstring
+# pylint: disable=missing-module-docstring
+# pylint: disable=missing-function-docstring
 
 from tkinter import Frame, Label
 
@@ -18,7 +18,7 @@ def start_game(root):
         with open(file_path, "r", encoding="utf-8") as file:
             picture = file.read()
         return picture
-
+        
     def main_frame():
         frame = Frame(
             graphics_frame,
@@ -30,11 +30,11 @@ def start_game(root):
         )
         frame.grid_propagate(False)
         frame.grid(row=0, column=0)
-        picture = load_location("tested_loc")
-        localtion_label = Label(
+        picture = load_location("camp")
+        location_label = Label(
             frame, text=picture, font=("Courier New", 16), bg="black", fg="white"
         )
-        localtion_label.pack()
+        location_label.pack()
 
         return frame
 
@@ -91,7 +91,7 @@ def start_game(root):
 
         def continue_game(event):
             open_label.destroy()
-            root.unpind("<Key>")
+            root.unbind("<Key>")
 
         root.bind("<Key>", continue_game)
         root.focus_set()
